@@ -1,4 +1,3 @@
-/* 기본 스타일 및 변수 */
 :root {
     --primary-color: #4a6bff;
     --secondary-color: #ff6b6b;
@@ -106,7 +105,6 @@ ul {
     background-color: var(--light-color);
 }
 
-/* 네비게이션 */
 #navbar {
     position: fixed;
     width: 100%;
@@ -173,7 +171,6 @@ ul {
     transition: var(--transition);
 }
 
-/* 히어로 섹션 */
 .hero {
     height: 100vh;
     display: flex;
@@ -207,7 +204,6 @@ ul {
     gap: 20px;
 }
 
-/* 소개 섹션 */
 .about-content {
     display: flex;
     align-items: center;
@@ -257,7 +253,16 @@ ul {
     margin-bottom: 20px;
     color: #555;
 }
+.accent-btn {
+    background-color: #ff7700;
+    color: white;
+    border: 2px solid #ff7700;
+}
 
+.accent-btn:hover {
+    background-color: transparent;
+    color: #ff7700;
+}
 .personal-info {
     margin-top: 30px;
 }
@@ -270,15 +275,14 @@ ul {
 
 .info-label {
     font-weight: 600;
-    width: 70px; /* 너비 축소 */
-    margin-right: 10px; /* 간격 추가 */
+    width: 70px;
+    margin-right: 10px;
 }
 
 .info-value {
     font-weight: 500;
 }
 
-/* 기술 섹션 */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -338,7 +342,6 @@ ul {
     border-radius: 5px;
 }
 
-/* 프로젝트 섹션 */
 .projects-filter {
     display: flex;
     justify-content: center;
@@ -446,7 +449,6 @@ ul {
     text-decoration: underline;
 }
 
-/* 유튜브 비디오 컨테이너 */
 .video-container {
     position: relative;
     width: 100%;
@@ -466,7 +468,6 @@ ul {
     border: none;
 }
 
-/* 스크린샷 이미지 컨테이너 */
 .img-container {
     width: 100%;
     margin: 15px 0;
@@ -486,7 +487,6 @@ ul {
     transform: scale(1.02);
 }
 
-/* 연락처 섹션 */
 .contact-container {
     display: flex;
     gap: 50px;
@@ -512,7 +512,28 @@ ul {
 .contact-details h3 {
     margin-bottom: 5px;
 }
+.profile-button-container {
+    margin-top: 20px;
+}
 
+.profile-detail-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color, #4d8cf5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile-detail-btn:hover {
+    background-color: var(--primary-dark, #3a6abf);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .social-links {
     display: flex;
     gap: 15px;
@@ -562,7 +583,6 @@ ul {
     border-color: var(--primary-color);
 }
 
-/* 푸터 */
 footer {
     background-color: var(--dark-color);
     color: white;
@@ -570,7 +590,6 @@ footer {
     text-align: center;
 }
 
-/* 상단으로 버튼 */
 #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -598,7 +617,6 @@ footer {
     background-color: var(--dark-color);
 }
 
-/* 애니메이션 */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -614,7 +632,6 @@ footer {
     animation: fadeIn 1s ease;
 }
 
-/* 타이핑 효과 */
 .typing-text {
     overflow: hidden;
     border-right: .15em solid var(--primary-color);
@@ -633,7 +650,6 @@ footer {
     50% { border-color: var(--primary-color); }
 }
 
-/* 반응형 디자인 */
 @media (max-width: 992px) {
     .about-content {
         flex-direction: column;

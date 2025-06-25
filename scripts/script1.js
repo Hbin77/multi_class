@@ -132,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 typingText.style.animation = 'typing 4s steps(40, end), blink-caret .75s step-end infinite';
 
-                // 타이핑 완료 후 너비 설정
                 setTimeout(() => {
                     typingText.style.width = '100%';
                 }, 4000);
@@ -171,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // GitHub 아이콘 클릭 시 개인 GitHub 페이지로 연결
     document.querySelectorAll('.project-link .fa-github').forEach(icon => {
         const linkElement = icon.closest('a');
         if (linkElement) {
