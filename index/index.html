@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20244300 박현빈 개인페이지</title>
+    <link rel="stylesheet" href="../styles/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 >My HomePage</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">홈</a></li>
+                    <li><a href="#about">프로필</a></li>
+                    <li><a href="#skills">기술</a></li>
+                    <li><a href="#projects">프로젝트</a></li>
+                    <li><a href="#contact">연락</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typing-text">안녕하세요, 저는 <span class="highlight">박현빈</span>입니다</h1>
+                <p>인공지능 개발자를 꿈꾸는 21살 대학생</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">프로젝트 보기</a>
+                    <a href="#contact" class="btn secondary-btn">연락하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">프로필</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="../images/myimg.jpg" alt="프로필 이미지" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>내 이야기</h3>
+                    <p>안녕하세요! 저는 국립순천대학교에 재학중인 인공지능공학부 박현빈 입니다.</p>
+                    <p>저는 고등학교 때 부터 컴퓨터에 대해 관심이 많고 프로그래밍에 처음 관심을 가지게 되었습니다.
+                        그렇게 컴퓨터 프로그래밍을 배우다 보니 인공지능이라는 분야에 관심이 생겨
+                        구글에서 나온 Teachable Machine이라는 AI학습 도구 오픈소스를 처음 접하며 활용하여 웹사이트를
+                        제작해 보며 본격적으로 AI라는 분야에 빠져들게 되었습니다.
+                        <br><br>프로필 이미지는 챗지피티에게 저의 사진을 지브리화 프롬프트로 제작한 이미지입니다.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">이름:</span>
+                            <span class="info-value">박현빈</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">이메일:</span>
+                            <span class="info-value">phb007298@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">사는 곳:</span>
+                            <span class="info-value">전라남도, 순천시</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">개발 능력</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>프론트엔드</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>기타 기술</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 86%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Responsive Design">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h4>앱 디자인</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">모두</button>
+                <button class="filter-btn" data-filter="web">웹 프로젝트</button>
+                <button class="filter-btn" data-filter="app">앱 프로젝트</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI 가위바위보 웹사이트</h3>
+                        <p>이 웹사이트는 제가 고등학생 시절 동아리에서 학교 AI 행사에서 사용할 웹페이지를 위해 제작한 웹 사이트 입니다.
+                            HTML, CSS, JavaScript를 활용하여 웹페이지를 구성하고 Teachable Machine을
+                            사용하여 수백장의 가위, 바위, 보 이미지를 머신러닝 시켜서 제작한 이미지 인식하여 지지 않는 가위바위보를 하도록 머신러닝 된
+                            AI를 불러와 웹사이트에 적용시킨 프로젝트 입니다. <span class="highlight">(깃허브 : tm-project)</span></p>
+
+                        <p><strong>가위바위보 웹사이트 스크린샷:</strong></p>
+                        <div class="img-container">
+                            <img src="../images/tmwep.png" alt="가위바위보 웹사이트 스크린샷" class="project-screenshot">
+                        </div>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Teachable Machine</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> 보기</a>
+                            <a href="http://github.com/Hbin77/tm-project" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> 깃허브</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <div class="img-placeholder neulbom-logo">
+                            <!-- 이미지는 CSS 배경으로 적용됨 -->
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>늘봄 Project</h3>
+                        <p>늘봄은 2024 멋쟁이사자처럼에서 주최하는 헤커톤에서 웰니스(Wellness)라는 주제에 맞추어 제작한 앱 프로그램입니다.
+                        늘봄은 수면을 도와주는 앱으로 현대인의 수면의 질을 높여주고 수면 패턴이 일정할 수 있게 도와줍니다.
+                        저는 해당 프로젝트에서 BackEnd 파트를 맡아 서버와 데이터 베이스를 구축하여 프론트 엔드 작업물과 연결하는 작업을 맡아
+                        팀원들과 협업하여 프로젝트를 완성하였습니다. <span class="highlight">(깃허브 : nuelbo)</span></p>
+
+                        <p><strong>멋쟁이사자처럼 12기 해커톤:</strong></p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gW3bOAdTBkk" title="멋쟁이사자처럼 소개 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="project-tags">
+                            <span>BackEnd</span>
+                            <span>SpringBoot</span>
+                            <span>서버</span>
+                            <span>데이터 베이스</span>
+                            <span>앱 서비스</span>
+                            <span>FireBase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> 보기</a>
+                            <a href="https://github.com/Hbin77/nuelbo" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> 깃허브</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">연락</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h3>이메일</h3>
+                            <p>phb007298@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h3>위치</h3>
+                            <p>순천, 대한민국</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Hbin77" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/biiiiiiin_7.7/" target="_blank" rel="noopener noreferrer" class="social-link" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">메시지</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">보내기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 20244300 박현빈 개인페이지 - 교수님 한학기 동안 고생 많으셨습니다. 감사합니다.</p>
+        </div>
+    </footer>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="../scripts/script1.js"></script>
+</body>
+</html>
